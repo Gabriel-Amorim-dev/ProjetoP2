@@ -1,0 +1,80 @@
+/* ====== Ajustes gerais da página Acesso ====== */
+
+.acess-options {
+    margin: 40px auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+/* ====== Botões principais ====== */
+
+#acess-options button,
+.acess-options button {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--darkblue);
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+    border-radius: 6px;
+    letter-spacing: 1px;
+}
+
+#acess-options button:hover,
+.acess-options button:hover {
+    background-color: var(--box);
+    transform: translateY(-2px);
+}
+
+/* ====== Título da página ====== */
+
+.pagtitle h2 {
+    font-size: 2.1em;
+    margin-bottom: -80px; /* ajuste para ficar acima da imagem */
+}
+
+/* ====== Ajuste do header fixo para evitar sobreposição ====== */
+
+main {
+    padding-top: 110px; /* antes era 93px, aumenta para acomodar 6 itens */
+}
+
+/* ====== Responsividade leve ====== */
+
+@media (max-width: 768px) {
+    .acess-options {
+        width: 90%;
+        padding: 20px 10px;
+    }
+
+    .acess-options button {
+        font-size: 0.9em;
+        padding: 12px 16px;
+    }
+
+    header {
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    nav .navmenu {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navmenu li {
+        padding: 8px 12px;
+        border-left: none;
+    }
+}
+/* Fim do arquivo acess.css */

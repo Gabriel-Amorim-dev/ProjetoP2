@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Cliente - Login</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script src="../js/jquery-3.6.4.min.js"></script>
+  <script src="../js/api.js"></script>
+
+
+  <link rel="stylesheet" href="../css/default.css" />
+  <link rel="stylesheet" href="../css/login-client.css" />
+  </head>
+
+<script src="../js/login-client.js"></script>
+
+<body>
+
+  <div class="card">
+    <h2>Área do Cliente</h2>
+    <p class="subtitle">Acesse sua conta para visualizar reservas e serviços exclusivos</p>
+
+    <form id="form-login-cliente">
+      <label for="cliente-email">E-mail</label>
+      <input type="email" id="cliente-email" placeholder="seuemail@exemplo.com" required>
+
+      <label for="cliente-senha">Senha</label>
+      <input type="password" id="cliente-senha" placeholder="********" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <div id="erro-cliente" class="error"></div>
+  </div>
+
+</body>
+</html>
